@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+      <title>Memory Card Game</title>
+        <meta name="description" content="Memory Card Game">
+        <meta name="author" content="Anna Antony">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet prefetch" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main>
+    <!--- start container --->
+    <div class="container">
+      <!--- headline and text --->
+        <header>
+          <h1>Memory Card Game</h1>
+          <p>Click and match all the cards as fast as you can!</p>
+        </header>
+        <!--- score and timer --->
+        <section class="score-section">
+        	<ul class="score">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+        	<span class="moves">0</span> Move(s)
+            <div class="time"></div>
+              <div class="restart" onclick=startGame()>
+        		     <i class="fa fa-repeat"></i>
+        	    </div>
+        </section>
+        <!--- card stack --->
+        <ul class="deck" id="card-stack">
+              <li class="card" type="diamond">
+                  <i class="fa fa-diamond"></i>
+              </li>
+              <li class="card" type="paper-plane-o">
+                  <i class="fa fa-paper-plane-o"></i>
+              </li>
+              <li class="card match" type="anchor">
+                  <i class="fa fa-anchor"></i>
+              </li>
+              <li class="card" type="bolt" >
+                  <i class="fa fa-bolt"></i>
+              </li>
+              <li class="card" type="cube">
+                  <i class="fa fa-cube"></i>
+              </li>
+              <li class="card match" type="anchor">
+                  <i class="fa fa-anchor"></i>
+              </li>
+              <li class="card" type="leaf">
+                  <i class="fa fa-leaf"></i>
+              </li>
+              <li class="card" type="bicycle">
+                  <i class="fa fa-bicycle"></i>
+              </li>
+              <li class="card" type="diamond">
+                  <i class="fa fa-diamond"></i>
+              </li>
+              <li class="card" type="bomb">
+                  <i class="fa fa-bomb"></i>
+              </li>
+              <li class="card" type="leaf">
+                  <i class="fa fa-leaf"></i>
+              </li>
+              <li class="card" type="bomb">
+                  <i class="fa fa-bomb"></i>
+              </li>
+              <li class="card open show" type="bolt">
+                  <i class="fa fa-bolt"></i>
+              </li>
+              <li class="card" type="bicycle">
+                  <i class="fa fa-bicycle"></i>
+              </li>
+              <li class="card" type="paper-plane-o">
+                  <i class="fa fa-paper-plane-o"></i>
+              </li>
+              <li class="card" type="cube">
+                  <i class="fa fa-cube"></i>
+          </ul>
+        <!--- pop up message with game details --->
+        <div id="popup" class="overlay">
+            <div class="message">
+                <h2>Congratulations!</h2>
+                <a class="close" href=# >×</a>
+                <div class="congrats">
+                    You have finished this fun game!
+                </div>
+                <div class="details">
+                    <p>Time: <span id=totaltime> </span> </p>
+                    <p>It only took you <span id=totalmoves> </span> moves.</p>
+                    <p>Rating:  <span id=Rating></span></p>
+                </div>
+                <button id="retry"onclick="playAgain()">
+                    Play again! </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--- end container --->
+    <script  src="js/app.js"></script>
+    </main>
+  </body>
+</html>
