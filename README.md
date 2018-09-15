@@ -6,6 +6,9 @@ If cards don't match they will have a red background. If they do match the cards
 ## General
 The start code had been provided by Udacity. I have also kept the background image, but I changed the name of the CSS file. Styling the elements didn't cause me any problems, but programming everything with JavaScript was very tricky for me. I have researched a lot on forums I've found while searching on Google. Still I learned a lot about implementing and using JavaScript to get more live into my code.
 
+Update: After submitting my code and getting feedback I added the CDN for FontAwesome. I also replaced three icons as they were not supported anymore or their classes changed (Diamond, Paper plane and restart icons).
+I also improved the timer function.
+
 ## Sources
 
 #### Shuffle function (also provided by Udacity)
